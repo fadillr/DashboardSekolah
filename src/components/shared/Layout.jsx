@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from "react-router-dom";
-import { FaArrowLeft, FaSchool, FaSlack, FaThLarge, FaUser, FaUserCircle,  } from "react-icons/fa";
+import { FaArrowLeft, FaSchool, FaSearch, FaSlack, FaThLarge, FaUser,  } from "react-icons/fa";
 import { IoIosDocument, IoIosNotifications } from "react-icons/io";
 import { useState } from "react";
 
@@ -27,8 +27,8 @@ const Layout = () => {
     };
 
     return (
-        <div className="flex">
-            <div className={` ${open ? "w-72" : "w-fit"} duration-300 h-screen bg-dark-purple relative`}>
+        <div className="flex bg-[#F5F7FA]">
+            <div className={` ${open ? "w-80" : "w-fit"} duration-300 h-screen bg-dark-purple relative`}>
                 <div className="text-white absolute cursor-pointer -right-3 top-9 p-2 border-2 border-white bg-dark-purple rounded-full" onClick={handleMenuClick}>
                     <FaArrowLeft className={`${!open && "rotate-180"}`} />
                 </div>
@@ -48,22 +48,24 @@ const Layout = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col p-5 h-screen  w-screen">
-                <div className="flex fle-row gap-5 w-full">
-                    <div className="grow">
-                        <div className="flex items-center">
+            <div className="flex flex-col h-screen  w-screen">
+                <div className="flex fle-row gap-5 w-full h-20 p-10 bg-white">
+                    <div className="  flex items-center grow">
+                        <span className=" font-semibold text-[28px] text-dark-purple">Overview</span>
+                    </div>
+                    <div className="flex items-center justify-end gap-12">
+                        <form className="flex gap-4 items-center py-1 px-6 bg-[#F5F7FA] rounded-full border-2">
+                            <FaSearch className="text-sm text-dark-purple opacity-50"/>
                             <input
                                 type="text"
-                                placeholder="Search..."
-                                className="p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 w-1/2"
+                                placeholder="Search for something"
+                                className="text-[15px] text-dark-purple opacity-50 outline-none border-none bg-transparent"
                             />
+                        </form>
+                        <div className="p-1 bg-[#F5F7FA] rounded-full border-2">
+                            <IoIosNotifications className="text-red-500 text-[25px]" />
                         </div>
-                    </div>
-                    <div className=" grow flex items-center justify-end">
-                        <div className="flex gap-4 text-2xl">
-                            <IoIosNotifications/>
-                            <FaUserCircle/>
-                        </div>
+                        <img src="/src/assets/profile.svg" alt="" />
                     </div>
                 </div>
                 <div>
