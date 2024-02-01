@@ -1,11 +1,7 @@
-import { Route, Routes } from "react-router-dom"
-import Layout from "./components/shared/Layout"
-import Dashboard from "./components/Dashboard"
-import Login from "./pages/Login"
-import User from "./components/User"
-import Class from "./components/Class"
-import Report from "./components/Report"
-
+import { Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Dashboard from "./components/Dashboard";
+import Class from "./components/Class";
 
 const App = () => {
   return (
@@ -13,14 +9,12 @@ const App = () => {
       <Routes>
         <Route path="/" Component={Layout}>
           <Route index Component={Dashboard}/>
-          <Route path="user" Component={User}/>
           <Route path="class" Component={Class}/>
-          <Route path="report" Component={Report}/>
         </Route>
-        <Route path="login" Component={Login}/>
+        <Route />
       </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
