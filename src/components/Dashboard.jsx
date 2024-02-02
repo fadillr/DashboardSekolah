@@ -131,10 +131,42 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="flex flex-col w-1/2">
-                <div className="bg-white shadow-md rounded-lg p-5 h-full">
+                <div className="flex flex-col bg-white shadow-md rounded-lg p-5 h-full gap-5">
                   <div className="flex flex-row items-center justify-between">
                     <h3 className=" text-base font-semibold">Tugas</h3>
                     <BsThreeDots />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-row text-xs items-center justify-between p-2 border-2 rounded-md">
+                      <div className="flex flex-row items-center gap-1">
+                        <div className="p-2 bg-blue text-white w-fit rounded-lg">
+                          <BsCalculatorFill />
+                        </div>
+                        <p>Matematika</p>
+                      </div>
+                      <p>senin, 13/02/24</p>
+                      <BsThreeDots />
+                    </div>
+                    <div className="flex flex-row text-xs items-center justify-between p-2 border-2 rounded-md">
+                      <div className="flex flex-row items-center gap-1">
+                        <div className="p-2 bg-blue text-white w-fit rounded-lg">
+                          <BsCalculatorFill />
+                        </div>
+                        <p>Matematika</p>
+                      </div>
+                      <p>senin, 13/02/24</p>
+                      <BsThreeDots />
+                    </div>
+                    <div className="flex flex-row text-xs items-center justify-between p-2 border-2 rounded-md">
+                      <div className="flex flex-row items-center gap-1">
+                        <div className="p-2 bg-blue text-white w-fit rounded-lg">
+                          <BsCalculatorFill />
+                        </div>
+                        <p>Matematika</p>
+                      </div>
+                      <p>senin, 13/02/24</p>
+                      <BsThreeDots />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -18,6 +18,7 @@ const Layout = () => {
   const menuItems = [
     { icon: <FaHome />, text: "Dashboard", link: "/" },
     { icon: <MdClass />, text: "Class", link: "/class" },
+    { icon: <MdClass />, text: "Matematika", link: "/class/matematika" },
   ];
 
   return (

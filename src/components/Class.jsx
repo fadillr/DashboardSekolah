@@ -27,6 +27,48 @@ const Class = () => {
       guru: "Michael Johnson",
       jam: "10.30-12.00",
     },
+    {
+      id: 1,
+      title: "Matematika",
+      icon: <BsCalculatorFill />,
+      guru: "John Doe",
+      jam: "07.30 - 09.00",
+    },
+    {
+      id: 2,
+      title: "Biologi",
+      icon: <RiPlantFill />,
+      guru: "Jane Smith",
+      jam: "09.30-10.30",
+    },
+    {
+      id: 3,
+      title: "Fisika",
+      icon: <IoLogoElectron />,
+      guru: "Michael Johnson",
+      jam: "10.30-12.00",
+    },
+    {
+      id: 1,
+      title: "Matematika",
+      icon: <BsCalculatorFill />,
+      guru: "John Doe",
+      jam: "07.30 - 09.00",
+    },
+    {
+      id: 2,
+      title: "Biologi",
+      icon: <RiPlantFill />,
+      guru: "Jane Smith",
+      jam: "09.30-10.30",
+    },
+    {
+      id: 3,
+      title: "Fisika",
+      icon: <IoLogoElectron />,
+      guru: "Michael Johnson",
+      jam: "10.30-12.00",
+    },
   ];
 
   return (
